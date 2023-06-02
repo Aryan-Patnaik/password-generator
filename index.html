@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div class="password-container">
+        <div class="options">
+            <label for="length">Password Length (4-30):</label>
+            <input type="range" id="length" min="4" max="30" step="1" value="8">
+            <br>
+            <p>Character Options:</p>
+            <label for="uppercase"><input type="checkbox" id="uppercase"> Uppercase Letters (A-Z)</label>
+            <br>
+            <label for="lowercase"><input type="checkbox" id="lowercase"> Lowercase Letters (a-z)</label>
+            <br>
+            <label for="numbers"><input type="checkbox" id="numbers"> Numbers (0-9)</label>
+            <br>
+            <label for="special"><input type="checkbox" id="special"> Special Characters (!@#$%^&*())</label>
+            <br>
+            <label for="rule">Custom Rule:
+                <input type="text" id="rule" placeholder="E.g., no repeat characters">
+            </label>
+            <br>
+            <button onclick="generatePassword()">Generate Password</button>
+        </div>
+        <div class="password">
+            <input type="text" id="password" readonly>
+            <button onclick="copyToClipboard()">Copy to Clipboard</button>
+            <p>Password Strength: <span id="password-strength"></span></p>
+            <h2>Password History</h2>
+            <ul id="password-history"></ul>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+<footer>
+    <div class="footer-box">
+        <p class="footer-text">Follow on Instagram - <a href="https://instagram.com/i_am_aryan.25?igshid=NTc4MTIwNjQ2YQ==">i_am_aryan.25</a></p>
+        <p>My Portfolio: <a href="portfolio.html">Portfolio</a></p>
+        <p class="footer-text">Copyright &copy; 2023 - Aryan Patnaik</p>
+    </div>
+</footer>
+</html>

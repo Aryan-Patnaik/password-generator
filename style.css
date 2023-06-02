@@ -1,0 +1,66 @@
+body {
+    background-image: linear-gradient(to right, red , blue);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.password-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.options {
+    margin-right: 30px;
+}
+
+label {
+    display: block;
+}
+
+.password input {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.password button {
+    margin-top: 10px;
+}
+
+.password p {
+    font-weight: bold;
+}
+
+.password ul {
+    list-style-type: disc;
+    margin-top: 0;
+}
+
+.password li {
+    margin-bottom: 5px;
+}
+
+footer {
+    padding-top: 200px;
+    padding-left: 16px;
+    padding-right: 1210px;
+}
+
+.footer-box {
+    background-color: lightslategray;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+.footer-text {
+    margin: 0;
+}
